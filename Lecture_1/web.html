@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="data">
+        A few years later, Quaid-e-Azam opened his law firm and became a successful lawyer and by 1900, he was appointed as a magistrate for the region’s presidency. During this time, Jinnah noticed that Hindus and Muslims were united against England, but the Hindu leaders had set their interests somewhere else. Soon after this Quaid-e-Azam left behind practicing law and went on to join political parties so he could take up leadership positions among organizations that planned to form Pakistan’s identity. He started his political career with Indian National Congress in 1906, then after a time span of 7 years, Jinnah joined the Muslim League.
+    </div>
+    <br/>
+    <br/>
+    <div id="para"> Quaid-e-Azam opened his law firm and became a successful lawyer and by 1900, he was appointed as a magistrate for the region’s presidency. During this time, Jinnah noticed that Hindus and Muslims were united against England, but the Hindu leaders had set their interests somewhere else. Soon after this Quaid-e-Azam left behind practicing law and went on to join political parties so he could take up leadership positions among organizations that planned to form Pakistan’s identity. He started his political career with Indian National Congress in 1906, then after a time span of 7 years, Jinnah joined the Muslim League.
+
+    </div>
+    <button onclick="printPage()">Print</button>
+</body>
+<script>
+    function printPage(){
+        var body=document.getElementById('body').innerHTML;
+        var data=document.getElementById('para').innerHTML;
+        document.getElementById("body").innerHTML=data;
+        window.print();
+        document.getElementById('body').innerHTML=body;
+    }
+</script>
+</html>
